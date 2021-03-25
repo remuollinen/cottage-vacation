@@ -7,7 +7,7 @@
 body {
   font-family: "Crimson Text", serif;
   text-align: center;
-  background-color: rgba(95, 190, 76, 0.795);
+  background-color: #fefefe;
 }
 
 .nav {
@@ -18,12 +18,17 @@ body {
   position: relative;
 }
 
+.home {
+  text-decoration: none;
+  z-index: 2;
+}
+
 .title {
-  color: #fefefe;
+  color: #303030;
   font-weight: bold;
   font-size: 2.5rem;
-  z-index: 2;
   font-family: "Tangerine", cursive;
+  cursor: pointer;
 }
 
 .nav-links {
@@ -35,8 +40,17 @@ body {
 }
 
 .link {
-  color: #fefefe;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  color: #303030;
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.link:hover {
+  color: #fefefe;
+  background-color: rgb(53, 102, 167);
 }
 
 .hamburger {
@@ -50,33 +64,61 @@ body {
   width: 25px;
   height: 3px;
   margin: 5px;
-  background-color: #fefefe;
+  background-color: #303030;
   transition: all 0.3s ease;
 }
+
+.section {
+  height: auto;
+  width: auto;
+  margin: 0 5rem;
+}
+
+.section-header {
+  background-image: url(/img/home-img.jpg);
+  padding: 1rem 0 9rem 0;
+  color: #fefefe;
+  text-shadow: 1px 1px 10px #303030;
+}
+
+.container h3 {
+  padding: 2rem 0;
+}
+
+.container p {
+  margin: 1.5rem 0;
+  line-height: 1.5rem;
+}
+
+/* Media queries */
 
 @media screen and (max-width: 850px) {
   .nav {
     justify-content: center;
   }
 
-  .title {
+  .home {
     position: absolute;
   }
 
   .nav-links {
-    height: 50vh;
+    height: 100vh;
     width: 100%;
-    padding-top: 18vh;
-    background-color: rgb(95, 190, 76);
+    padding: 15vh 0;
+    background-color: rgb(68, 149, 255);
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    transform: translateY(-70%);
+    transform: translateY(-100%);
   }
 
   .nav.open .nav-links {
-    transform: translateY(30%);
+    transform: translateY(42.6%);
     transition: all 0.6s ease-in-out;
+  }
+
+  .nav.open .link {
+    color: #fefefe;
   }
 
   .hamburger {
@@ -85,6 +127,7 @@ body {
 
   .nav.open #line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
+    background-color: #fefefe;
   }
 
   .nav.open #line2 {
@@ -93,5 +136,18 @@ body {
 
   .nav.open #line3 {
     transform: rotate(45deg) translate(-5px, -6px);
+    background-color: #fefefe;
   }
 }
+
+@media screen and (max-width: 425px) {
+  .section {
+    margin: 1rem;
+  }
+  .section-header {
+    background: none;
+    text-shadow: none;
+    color: #303030;
+    padding: 3rem 0;
+  }
+} ;
