@@ -21,3 +21,4 @@ tiles.addTo(map);
 // Marker of location
 const marker = L.marker([61.716716, 29.727522]);
 marker.addTo(map);
+marker.bindPopup("<b>Log it up cabins</b>");

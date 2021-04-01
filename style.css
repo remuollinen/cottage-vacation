@@ -170,6 +170,63 @@ body {
   margin: 5% 20%;
 }
 
+/* Contact Form */
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgb(93, 143, 83);
+  padding: 20px;
+  margin: 0 5% 5% 5%;
+  box-shadow: 3px 3px 10px rgb(93, 143, 83);
+}
+
+#form label {
+  font-size: 1.5rem;
+  color: #fefefe;
+  margin: 5px;
+}
+
+#form input,
+#form select,
+#form textarea {
+  font-family: "Crimson Text", serif;
+  font-size: 1rem;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-style: none;
+  border-radius: 10px;
+}
+
+#form button {
+  font-family: "Crimson Text", serif;
+  font-size: 1rem;
+  background-color: #303030;
+  color: #fefefe;
+  padding: 10px 30px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+#form button:hover {
+  border: 2px solid #fefefe;
+}
+.form-header {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
 /* Footer */
 
 footer {
