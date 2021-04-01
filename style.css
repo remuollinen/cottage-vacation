@@ -331,12 +331,24 @@ footer p {
   .section {
     margin: 0.5rem;
   }
+
+  .container p {
+    margin: 30px 0;
+  }
   .section-header {
     background: none;
     text-shadow: none;
     color: #303030;
     padding: 3rem 0;
   }
+
+  .intro {
+    margin: 1rem;
+  }
+  #map {
+    margin: 5%;
+  }
+
   #form {
     width: 100vw;
     align-items: center;
