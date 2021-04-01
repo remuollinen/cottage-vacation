@@ -173,6 +173,7 @@ body {
 /* Contact Form */
 
 .form-wrapper {
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -222,7 +223,7 @@ body {
   border: 2px solid #fefefe;
 }
 .form-header {
-  width: 100%;
+  max-width: 100%;
   padding: 10px;
   font-size: 1.5rem;
 }
@@ -328,12 +329,20 @@ footer p {
 
 @media screen and (max-width: 425px) {
   .section {
-    margin: 1rem;
+    margin: 0.5rem;
   }
   .section-header {
     background: none;
     text-shadow: none;
     color: #303030;
     padding: 3rem 0;
+  }
+  #form {
+    width: 100vw;
+    align-items: center;
+  }
+
+  #form textarea {
+    width: 100%;
   }
 } ;
