@@ -93,6 +93,15 @@ body {
   text-shadow: 2px 2px 20px #303030;
 }
 
+.logo {
+  font-family: "Tangerine", cursive;
+  font-size: 2.5rem;
+  background-color: rgb(93, 143, 83);
+  color: #fefefe;
+  padding: 4px 8px;
+  border-radius: 20px;
+}
+
 .container h3 {
   padding: 2rem 0;
   font-size: 1.5rem;
@@ -156,13 +165,9 @@ body {
 
 /* Map section */
 
-.map {
+#map {
   height: 50vh;
-  margin: 10% 20%;
-  background-color: rgb(93, 143, 83);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 5% 20%;
 }
 
 /* Footer */
@@ -243,6 +248,9 @@ footer p {
 
   /* cabins and saunas media queries */
 
+  .section-header {
+    padding: 7rem 0 9rem 0;
+  }
   .intro {
     margin-bottom: 5rem;
   }

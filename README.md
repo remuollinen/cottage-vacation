@@ -1,8 +1,6 @@
 # Cottage vacation website
 
-**No real vacation services**
-
-This is a website for a cottage vacation, including several log cabins and saunas. The pages display information about the cottages, their locations and some pictures.
+This is a website for a cottage vacation, including several log cabins and saunas. The pages display information about the cottages, their location and some images.
 
 - Images from unsplash.com
 
@@ -15,3 +13,4 @@ This is a website for a cottage vacation, including several log cabins and sauna
 ## What I learned
 
 - How to make responsive navigation with a hamburger menu
+- How to add a map to the website with **Leaflet**

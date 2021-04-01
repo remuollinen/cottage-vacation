@@ -14,6 +14,20 @@
       href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+
     <script defer src="script.js"></script>
     <title>Log it up</title>
   </head>
@@ -37,10 +51,12 @@
     </nav>
     <section class="section">
       <div class="container">
-        <h2 class="section-header">Welcome to Log it up cabins</h2>
+        <h2 class="section-header">
+          Welcome to <b class="logo">Log it up</b> cabins
+        </h2>
         <h3>
-          Log it up cabins offer beautiful and comfortable log cabin housing all
-          year round.
+          <b class="logo">Log it up</b> cabins offer beautiful and comfortable
+          log cabin housing all year round.
         </h3>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
@@ -71,8 +87,8 @@
       </div>
     </section>
     <section class="map-section">
-      <h2>Location of the cabins</h4>
-      <div class="map"></div>
+      <h2>Location of the cabins</h2>
+      <div id="map"></div>
     </section>
     <footer>
       <p>&copy 2021 Log it up</p>
